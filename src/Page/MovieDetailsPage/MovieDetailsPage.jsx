@@ -8,8 +8,8 @@ import {
   useLocation,
 } from 'react-router-dom'
 import { getIdMovies } from '../../app/Api'
-import Cast from '../Cast/Cast'
-import { ButtonHome } from '../ButtonHome/ButtonHome'
+import Cast from '../../components/Cast/Cast'
+import { ButtonHome } from '../../components/ButtonHome/ButtonHome'
 export default function MovieDetailsPage() {
   const { moviesId } = useParams()
   const [movieOne, setMovieOne] = useState('')

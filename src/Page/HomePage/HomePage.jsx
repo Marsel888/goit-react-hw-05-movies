@@ -6,6 +6,7 @@ export default function HomePage() {
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
+    localStorage.removeItem('name')
     getTrending().then((data) => setMovies(data.results))
   }, [])
 
